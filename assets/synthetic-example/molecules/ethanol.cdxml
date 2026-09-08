@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CDXML BondLength="24" LineWidth="0.8" BoldWidth="2.4" LabelFont="3" LabelSize="12" CaptionFont="3" CaptionSize="12"><fonttable><font id="3" name="Arial" charset="iso-8859-1" /></fonttable><page id="1"><fragment id="2"><n id="10" p="10.000 30.000" Element="6" /><n id="11" p="30.785 18.000" Element="6" /><n id="12" p="51.570 30.000" Element="8"><t p="51.570 34.000" LabelAlignment="Left"><s font="3" size="12">OH</s></t></n><b id="30" B="10" E="11" Order="1" /><b id="31" B="11" E="12" Order="1" /></fragment></page></CDXML>

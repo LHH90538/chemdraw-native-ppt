@@ -1,0 +1,68 @@
+{
+  "name": "Native_ChemDraw_Demo",
+  "canvasWidth": 960,
+  "canvasHeight": 540,
+  "slideWidth": 960,
+  "slideHeight": 540,
+  "slideCount": 1,
+  "template": null,
+  "molecules": [
+    {
+      "name": "ethanol",
+      "file": "molecules/ethanol.cdxml",
+      "slide": 1,
+      "left": 100,
+      "top": 200,
+      "width": 250,
+      "height": 160,
+      "chemicalReview": "synthetic simple structure; verify exported preview"
+    },
+    {
+      "name": "benzene",
+      "file": "molecules/benzene.cdxml",
+      "slide": 1,
+      "left": 600,
+      "top": 170,
+      "width": 230,
+      "height": 210,
+      "chemicalReview": "synthetic simple structure; verify exported preview"
+    }
+  ],
+  "elements": [
+    {
+      "type": "text",
+      "slide": 1,
+      "left": 60,
+      "top": 50,
+      "width": 850,
+      "height": 50,
+      "text": "Editable native ChemDraw objects",
+      "size": 28,
+      "bold": true
+    },
+    {
+      "type": "text",
+      "slide": 1,
+      "left": 80,
+      "top": 405,
+      "width": 300,
+      "height": 40,
+      "text": "Ethanol",
+      "size": 20,
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "slide": 1,
+      "left": 570,
+      "top": 405,
+      "width": 300,
+      "height": 40,
+      "text": "Benzene",
+      "size": 20,
+      "align": "center"
+    }
+  ],
+  "textEdits": [],
+  "rasterExceptions": []
+}
