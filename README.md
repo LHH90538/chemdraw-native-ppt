@@ -43,7 +43,11 @@
 - Windows PowerShell 5.1 或更高版本
 - Python 3.10+（仅用于初始化项目）
 
-ChemDraw、PowerPoint 及其许可证不包含在本项目中。本项目是“图形重建工作流”，不是端到端 OCSR 模型；复杂结构仍需根据原图进行人工或代理复核。
+### 必须安装 ChemDraw 吗？
+
+如果要生成可编辑的 **ChemDraw 原生分子对象**，必须安装 Windows 版 ChemDraw；如果还要完成最终的 PPTX 导出，则同时必须安装 Microsoft PowerPoint。
+
+仅让 Codex 分析图片、重建结构或准备项目文件时，可以暂时不安装 ChemDraw。但没有 ChemDraw，无法完成原生对象嵌入，也无法保证用户之后能在 PowerPoint 中双击编辑分子。ChemDraw、PowerPoint 及其许可证不包含在本项目中。本项目是“图形重建工作流”，不是端到端 OCSR 模型；复杂结构仍需根据原图进行人工或代理复核。
 
 ### 项目文档
 
@@ -84,6 +88,10 @@ Then restart Codex and ask:
 - Windows PowerShell 5.1+
 - Python 3.10+ for project initialization
 
-ChemDraw, PowerPoint, and their licenses are not bundled. This is a figure-reconstruction workflow, not an end-to-end OCSR model; complex structures still require review against the source figure.
+### Do users need ChemDraw?
+
+Yes—generating editable **native ChemDraw molecule objects** requires the Windows version of ChemDraw. Microsoft PowerPoint is also required to complete the final PPTX export.
+
+Codex can analyze a figure, reconstruct structures, and prepare a project without ChemDraw. However, native object embedding and reliable double-click editing in PowerPoint cannot be completed without ChemDraw. ChemDraw, PowerPoint, and their licenses are not bundled. This is a figure-reconstruction workflow, not an end-to-end OCSR model; complex structures still require review against the source figure.
 
 Released under the [MIT License](LICENSE). Not affiliated with ChemDraw, Revvity, Microsoft, or OpenAI.
