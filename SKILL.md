@@ -1,17 +1,18 @@
 ---
 name: chemdraw-native-ppt
-description: "将化学文献图片或 PDF 图拆解为可编辑 PPT，分子重建为 ChemDraw 原生 CDXML/CDX 与嵌入式 OLE，文字和箭头重建为 PPT 对象；也用于修改 ChemDraw 图的键型、上下标和一键制作程序。"
+description: "用 ChemDraw 原生对象绘制和修改分子，从 SMILES 构造可编辑 CDXML，通过 Windows COM 批量导出分子图并生成 OCSR 标注；也将化学文献图片或 PDF 图重建为含原生分子 OLE 的可编辑 PPT。"
 ---
 
-# 化学文献图转 ChemDraw 原生 PPT
+# ChemDraw 原生分子绘制、标注与可编辑 PPT
 
-Deliver an editable reconstruction, a standalone reproducible project, and verified previews. Molecules are native ChemDraw OLE, not SVG, traced PPT lines, image previews alone, or Package attachments. Other text, arrows and simple illustrations are native PPT shapes or editable ChemDraw graphics. Use the requested output directory; otherwise prefer Downloads on Windows.
+Choose the deliverable from the user's task: editable CDXML/CDX, molecular images with annotations, or an editable PPT. For PPT reconstruction, deliver native ChemDraw OLE molecules, native PPT text/graphics, a standalone reproducible project, and verified previews. A molecule-generation task does not require PowerPoint or OLE. Use the requested output directory; otherwise prefer Downloads on Windows.
 
 ## Route the task
 
-- New figure: inspect the supplied image/PDF first. Read [reconstruction.md](references/reconstruction.md), inventory its elements, and reconstruct its actual molecules. Initialize with `scripts/new_project.py --mode empty --destination <new-directory>`.
+- SMILES-to-CDXML, native molecular image export, synthetic OCSR annotation, or batch generation: read [native-generation-and-annotation.md](references/native-generation-and-annotation.md). Use the owning project's validated generator when present; preserve its source identities, schema, style policy, and frozen-run boundaries.
+- Image/PDF figure reconstruction: inspect the supplied image/PDF first. Read [reconstruction.md](references/reconstruction.md), inventory its elements, and reconstruct its actual molecules. Initialize with `scripts/new_project.py --mode empty --destination <new-directory>`.
 - Existing project: inspect `project.json`, source image and molecule files. Preserve approved chemistry and styling. A self-authored ethanol/benzene demonstration is available with `--mode example`; read [example.md](references/example.md). Never substitute it for a new image.
-- Rendering/importing: read [project-format.md](references/project-format.md). The renderer supports arbitrary nonzero molecule counts and multiple slides. A completed project runs through its `start.cmd` without the installed skill.
+- PPT rendering/importing: read [project-format.md](references/project-format.md). The renderer supports arbitrary nonzero molecule counts and multiple slides. A completed project runs through its `start.cmd` without the installed skill.
 
 ## Image-to-project workflow
 

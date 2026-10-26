@@ -1,6 +1,6 @@
 interface:
-  display_name: "化学文献图转 ChemDraw 原生 PPT"
-  short_description: "拆解化学文献图，重建可编辑分子与图形，并生成可复用的一键制作程序"
-  default_prompt: "用 $chemdraw-native-ppt 将这张化学文献图重建为可编辑 PPT，分子使用 ChemDraw 原生对象，核对结构与特殊键，交付成品及一键项目。"
+  display_name: "ChemDraw 原生分子绘制与可编辑 PPT"
+  short_description: "生成原生CDXML、渲染分子图并标注OCSR数据，或重建化学文献图为可编辑PPT"
+  default_prompt: "用 $chemdraw-native-ppt 按我的目标完成 ChemDraw 原生分子绘制、CDXML 渲染与标注，或化学文献图的可编辑 PPT 重建，并核对结构和交付文件。"
 policy:
   allow_implicit_invocation: true
